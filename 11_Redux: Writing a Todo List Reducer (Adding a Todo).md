@@ -65,3 +65,13 @@ const testAddTodo = () => {
 testAddTodo();
 console.log("All test passed");
 ```
+
+1. 首先，我将空数组`stateBefore`,`action`作为参数传给`reducer`.
+
+1. 接着，`reducer`接收到`state` 和 `action`.然后 查看`action`的`type`
+
+1. 在这个例子里，`action`的 `type` 是 `ADD_TODO` 然后在`switch`的`case`中找到对应处理方式，返回一个新的数组，该数组包含原有的`state`对象，以及一个新加入的对象。
+
+1. 但是由于我们传入的是一个空数组，所以新的数组中只会有一个对象，但是这确实是一个全新的数组，而不是传入的那个。
+
+1. 最后我们比较两个数组的对象是一样的，这说明redux是按照我们的预想工作的。
