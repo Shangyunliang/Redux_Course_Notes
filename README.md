@@ -1,4 +1,4 @@
-# Redux_course_notes
+# Redux_Course_Notes
 
 ##这是一个免费课程的笔记，主要讲的Redux。
 
